@@ -100,11 +100,10 @@ details summary::-webkit-details-marker { display:none; content: ""; }
 .no-details details.open > summary::before {   content:none }
 
 
-
 h1 {
   margin: 0 auto;
   margin-left: 380px;
-  width: 174px;
+  width: 300px;
   font-family: Helvetica;
   font-size: 42px;
   font-weight: bold;
