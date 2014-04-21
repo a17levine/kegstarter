@@ -7,12 +7,12 @@
 
 # Set your project goal here - dollar amount
 # NOTE: if you manually want to adjust your progress to test the site, head over to the Order model (app/models/order.rb)
-project_goal: 120
+project_goal: 2500
 
 # If you want to edit the FAQ, head over to app/views/preorder/homepage/_faqs.html.erb
 
 # This'll be both the page title (<title></title>) and the name in the header
-product_name: "kegstarter"
+product_name: "weekend.js"
 
 # This will be used in sentences like Hooray You've just reserved product_description
 product_description: "a set of widgets"
@@ -22,7 +22,7 @@ product_description: "a set of widgets"
 product_image_path: "keg.png"
 
 # The message on the preorder page, Lockitron's is ""
-value_proposition: "buy a keg for the MakerSquare kegerator"
+value_proposition: "advanced js + real time node"
 
 # YouTube or Vimeo Video URL (The embed URL, without the query string options)
 # Replace /embed/ in your video url path with /v/ for video playback to work.
@@ -39,16 +39,16 @@ use_video_placeholder: true
 # Amazon settings -- you'll need an Amazon Payments account, sign up here --> http://bit.ly/SGksTv
 
 # To find your access key and secret key, head over to here --> http://bit.ly/R4I4ky (Follow that guide in the Seller Central page)
-amazon_access_key: "YOUR_AMAZON_ACCESS_KEY"
-amazon_secret_key: "YOUR_AMAZON_SECRET_KEY"
-price: 	19.95
+amazon_access_key: <%= ENV["AMAZON_ACCESS_KEY"] %>
+amazon_secret_key: <%= ENV["AMAZON_SECRET_KEY"] %>
+price: 	250
 
 # if use_payment_options is set to true, then a set of radio buttons will be displayed with various payment options.
 # There is a PaymentOption model for storing info about payment options.  To set up your payment options you should
 # put code in seeds.rb, then run rake db:seed
 use_payment_options: false
 
-payment_description: "Keg for MakerSquare"
+payment_description: "weekend.js at MakerSquare"
 
 # Amazon limits how much we can charge people with their Multi-Use tokens.
 # You probably should add some leeway to account for international shipping
@@ -58,9 +58,9 @@ charge_limit: 25.00
 # Stats settings
 
 # On Lockitron, it's "backers"
-primary_stat: "backers"
+primary_stat: "students"
 # This'll show up in the tweet as, "I'm backer number ..."
-primary_stat_verb: 'backer'
+primary_stat_verb: 'student'
 
 # The 2nd call to action button, towards the middle-ish of the page
 middle_reserve_text: "Reserve Now"
@@ -77,12 +77,12 @@ progress_text: "Implemented"
 ships: ""
 
 # On Lockitron, it's "Reserve Now"
-call_to_action: "Contribute Now"
+call_to_action: "Buy a Ticket"
 # On Lockitron, this is "Only $149 for a limited time"
-price_human: "to keg nirvana"
+price_human: "$250 for initial funders"
 
 # The paragraph below the price. You'd probably say something about how you're not going to charge them before it ships (so it's less risky).
-dont_give_them_a_reason_to_say_no: "You'll get this exact site. All you'll need to get started is a great product."
+dont_give_them_a_reason_to_say_no: "Ticket will cost $350 once funded"
 
 # Social Stuff
 facebook_app_id: "1234567890"
